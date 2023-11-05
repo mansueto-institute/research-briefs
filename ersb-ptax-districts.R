@@ -483,9 +483,11 @@ ggplot() +
 
 
 scatter_data <- scatter_data %>% select(block_group_fips, stateleg_district_1031, community, children_ages_5_to_17, enrolled_in_prek_to_grade_12, av, final_tax, tax_bill_total)
-write_csv(scatter_data, '/Users/nm/Desktop/block_group_students_taxes.csv')  
+write_csv(scatter_data, 'block_group_students_taxes.csv')  
 
 # -------------------------------------------------------------------------
 write_csv(student_df , 'student_districts.csv')
 write_csv(demo_df, 'demo_df.csv')
 write_csv(demo_df_citywide, 'demo_df_citywide.csv')
+
+# Data in this GSheet: https://docs.google.com/spreadsheets/d/1-Dl9byWcIMZBjW2rqOWEsTYmEM_vQCyqCetYdusXVKM/
